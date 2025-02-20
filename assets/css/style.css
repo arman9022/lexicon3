@@ -282,7 +282,7 @@ footer{
 /*mobile*/
 @media screen and (max-width: 444px) {
   .banner-video{ height:89vh; }
-  .banner-video video{ height:89%; }
+  .banner-video video{ height:95%; }
 } 
 /*tablet*/
 @media screen and (min-width: 444px) and (max-width: 777px) {
