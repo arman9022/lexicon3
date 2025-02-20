@@ -281,13 +281,13 @@ footer{
 }
 /*mobile*/
 @media screen and (max-width: 444px) {
-  .banner-video{ height:44vh; }
-  .banner-video video{ height:55%; }
+  .banner-video{ height:89vh; }
+  .banner-video video{ height:89%; }
 } 
 /*tablet*/
 @media screen and (min-width: 444px) and (max-width: 777px) {
-  .banner-video{ height:70vh; }
-  .banner-video video{ height:70%; }
+  .banner-video{ height:89vh; }
+  .banner-video video{ height:89%; }
 } 
 /*desktop*/
 @media screen and (min-width: 777px) and (max-width: 1033px) {
