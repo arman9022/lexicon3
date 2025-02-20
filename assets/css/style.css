@@ -6,6 +6,9 @@
 body{
   font-family: "Lexend Deca", serif;
 }
+a{
+  text-decoration: none;
+}
 .btn-primary-2 {
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--color-one);
@@ -111,6 +114,11 @@ body{
   background-color: var(--color-two);
   color: var(--color-three);
 }
+.course-top{
+  background-color: #FFD600;
+  color: #E51D27;
+  padding: 5px 20px;
+}
 .lexicon-icon{
   color: var(--color-one);
 }
@@ -135,4 +143,164 @@ footer{
 .footerLink:hover{
   color: var(--color-three);
   letter-spacing: 1px;
+}
+.footer-mail-input{
+  border-radius: 0px;
+  background-color: transparent;
+  color: white;
+  text-align: end;
+  padding: 12px 10px;
+  border:1px solid white;
+}
+.footer-mail-input::placeholder {
+  color: white;
+}
+.footer-mail-input:focus {
+  color: #fff;
+  background: #222;
+  box-shadow: none;
+}
+.black-background{
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.custom-label{
+  font-weight: 600;
+}
+.custom-form-control{
+  border-radius: 0px;
+}
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+}
+
+.page-banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .page-banner{ height: 130px; }
+}
+.page-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.page-banner:hover::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+.page-banner h3 {
+  position: relative;
+  z-index: 2;
+}
+
+.main-content-background{
+  width: 100%;
+  min-height: 200vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),  url('/assets/img/all\ back.png');
+  background-position: center bottom ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.custom-tab-link{
+  background-color: transparent;
+  color: #E51D27;
+  opacity: .3;
+  font-weight: 400;
+  border-radius: 0px;
+  padding: 10px 0px;
+}
+.nav-pills .custom-tab-link.active, .nav-pills .show>.custom-tab-link {
+  background-color: transparent;
+  color: #E51D27;
+  opacity: 1;
+  border-bottom: 4px solid #E51D27;
+  border-radius: 0px;
+  padding: 10px 0px;
+}
+.nav-pills{
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.banner-video{
+  width:100%;
+  /*height:100vh;*/
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.banner-video video{
+  position: absolute;
+  left:0;
+  top:10;
+  object-fit:cover;
+  width:100%;
+  /*height:95%;*/
+  pointer-events:none;
+}
+.banner-video .content{
+  position:relative;
+  z-index:1;
+  max-width:1000px;
+  height:95%;
+  margin:0 auto;
+  text-align:center;
+  display:flex;
+  align-items:end;
+}
+.banner-video .content h1{
+  margin:0;
+  padding:0;
+  font-size:4.5em;
+  text-transform:uppercase;
+  color:white;
+}
+.banner-video .content p{
+  font-size:1.5em;
+  color:white;
+}
+/*mobile*/
+@media screen and (max-width: 444px) {
+  .banner-video{ height:44vh; }
+  .banner-video video{ height:55%; }
+} 
+/*tablet*/
+@media screen and (min-width: 444px) and (max-width: 777px) {
+  .banner-video{ height:70vh; }
+  .banner-video video{ height:70%; }
+} 
+/*desktop*/
+@media screen and (min-width: 777px) and (max-width: 1033px) {
+  .banner-video{ height:90vh; }
+  .banner-video video{ height:90%; }
+} 
+/*laptop*/
+@media screen and (min-width: 1033px) and (max-width: 1444px) {
+  .banner-video{ height:89vh; }
+  .banner-video video{ height:89%; }
+} 
+/*hd monitor*/
+@media screen and (min-width: 1444px) {
+  .banner-video{ height:87vh; }
+  .banner-video video{ height:87%; }
 }
