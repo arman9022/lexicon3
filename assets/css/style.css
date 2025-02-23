@@ -216,11 +216,17 @@ footer{
   position: relative;
   z-index: 2;
 }
+.page-banner-curve{
+  border-radius: 20px;
+}
+.page-banner-curve::before{
+  border-radius: 20px;
+}
 
 .main-content-background{
   width: 100%;
-  min-height: 200vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),  url('/assets/img/all\ back.png');
+  min-height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),  url('/assets/img/all\ back.png');
   background-position: center bottom ;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,7 +234,7 @@ footer{
 .custom-tab-link{
   background-color: transparent;
   color: #E51D27;
-  opacity: .3;
+  opacity: .6;
   font-weight: 400;
   border-radius: 0px;
   padding: 10px 0px;
@@ -265,23 +271,25 @@ footer{
 .banner-video .content{
   position:relative;
   z-index:1;
-  max-width:1000px;
+  /* max-width:1000px; */
+  width: 90%;
   height:95%;
-  margin:0 auto;
+  /* margin:0px; */
   text-align:center;
   display:flex;
   align-items:end;
+  text-shadow: 0px 1px 1px #000;
 }
 .banner-video .content h1{
-  margin:0;
+  /* margin:0;
   padding:0;
   font-size:2.5em;
   text-transform:normal;
-  color:#E51D27;
+  color:#E51D27; */
 }
 .banner-video .content p{
-  font-size:1.5em;
-  color:white;
+  /* font-size:1.5em;
+  color:white; */
 }
 /*mobile*/
 @media screen and (max-width: 444px) {
@@ -307,4 +315,19 @@ footer{
 @media screen and (min-width: 1444px) {
   .banner-video{ height:87vh; }
   .banner-video video{ height:87%; }
+}
+
+.lexifly-logo{
+  height: 70px;
+  width: auto;
+}
+.white-form-control{
+  border-radius: 0px;
+  background-color: #EAEBEE;
+  color: #000;
+}
+.form-select:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
 }
