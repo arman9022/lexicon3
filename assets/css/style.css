@@ -331,3 +331,40 @@ footer{
   outline: 0;
   box-shadow: none;
 }
+.single-event-box{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  padding: 10px 20px;
+  color: #fff;
+}
+.single-event-box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.single-event-content {
+  position: relative;
+  z-index: 2;
+}
+.single-event-box:hover::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.topscorer-single-box{
+  padding: 30px 10px;
+  top: 713px;
+  left: 600px;
+  box-shadow: 0px 4px 10px 0px #00000040;
+}
