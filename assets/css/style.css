@@ -368,3 +368,12 @@ footer{
   left: 600px;
   box-shadow: 0px 4px 10px 0px #00000040;
 }
+
+@media screen and (max-width: 600px) {
+  .achiv-img-red{
+    rotate: 90deg; 
+  }
+  .achiv-img-black{
+    rotate: 270deg; 
+  }
+}
